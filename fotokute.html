@@ -1,0 +1,615 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>US</title>
+      <link rel="stylesheet" href="styles.css" />
+      <header class="header">
+      <div class="logo">MAILOV</div>
+      <nav>
+          <a href="index.html">INICIO</a>
+          <a href="songcute.html">SONGS CUTE</a>
+          <a href="fotokute.html">KIUTI</a>
+      </nav>
+  </header>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <style>
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    background-color: #ff4d8b;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header a:hover {
+    color: #fe7f94;
+}
+</style>
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        .header a {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 10px; /* O quítalo para que sea pixel */
+    border-bottom: 4px solid rgba(0,0,0,0.2); /* Efecto 3D */
+    transition: all 0.2s;
+}
+
+.header a:hover {
+    background-color: #ffdae0;
+    color: #bc114a;
+    transform: translateY(2px);
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+    </style>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="musica-container">
+    <span class="nota-musical">♫</span>
+    <audio id="musica-fondo" loop>
+        <source src="ILLIT - Magnetic.mp3" type="audio/mpeg">
+        Tu navegador no soporta la música.
+    </audio>
+    <button id="btn-musica" onclick="controlarMusica()">PONER PLAY 💕</button>
+</div>
+<style>
+  .musica-container {
+    position: fixed;
+    top: 80px; /* Debajo de tu barra verde */
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 3px solid #bc114a;
+    box-shadow: 3px 3px 0px #ffb7c5;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#btn-musica {
+    background-color: #ffb7c5;
+    border: 2px solid #bc114a;
+    color: #bc114a;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#btn-musica:hover {
+    background-color: #bc114a;
+    color: white;
+}
+
+.nota-musical {
+    font-size: 20px;
+    animation: vibrar 1s infinite alternate;
+}
+
+@keyframes vibrar {
+    from { transform: rotate(-10deg); }
+    to { transform: rotate(10deg); }
+}
+    @font-face {
+      font-family: 'fuentepro';
+      src: url('CHERL___.TTF') format(truetype);
+    }
+    p{
+      font-family: 'fuentepro', sans-serif;
+      font-size: 20px;
+      padding: 20px;
+    }
+</style>
+<script>
+  function controlarMusica() {
+    const musica = document.getElementById("musica-fondo");
+    const boton = document.getElementById("btn-musica");
+
+    if (musica.paused) {
+        musica.play();
+        boton.innerText = "PAUSAR 🌸";
+    } else {
+        musica.pause();
+        boton.innerText = "PONER PLAY 💕";
+    }
+}
+</script>
+    <p> Holi mi amorcito precioso hermoso, bienvenido a esta sección extrema, esta sección es para que veas todas las fotitos que hemos tomado, jiji me pone muy feliz crear recuerdos y tomar una foto porque al ver la foto vuelvo a recordar lo que senti en ese momento.
+      Esta sección es como la "ultima" por el momento porque en un futuro seguire haciendo gigante la pagina porque aun nos queda mucho por vivir mi amorcito y cuando ya seamos viejitos veremos nuestras fotos de jovenes jiji y pues ya cuando seamos viejitos y estemos ya sin dientes xd vamos a tomarnos más fotos y también en las fotos van a 
+      salir nuestros hijitos que tengamos en el futuro y formar una familia contigo me haria muy feliz. Espero que cuando veas estas fotos también recuerdes como te sentiste ese dia y pues espero sean sentimientos felices jiji. También quiero decirte queee puedes darle click a la foto para verla mejor. </p>
+    <div id="miModal" class="modal">
+  <span class="cerrar">&times;</span>
+  <img class="modal-contenido" id="imgExpandida">
+  <div id="caption"></div>
+  
+</div>
+    <div class="gallery">
+  <div class="pin">
+    <img src="160625.jpeg" alt="Descripción">
+    <p> holi mi amorcito</p>
+  </div>
+  <div class="pin">
+    <img src="1000060280.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000060278.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="gradua tion.jpeg" alt="Descripción">
+  </div>
+   <div class="pin">
+    <img src="1000057797.jpg" alt="Descripción">
+  </div>
+   <div class="pin">
+    <img src="1000057481.jpg" alt="Descripción">
+  </div>
+   <div class="pin">
+    <img src="1000059552.jpg" alt="Descripción">
+  </div>
+   <div class="pin">
+    <img src="WhatsApp Image 2026-05-08 at 11.11.12 PM.jpeg" alt="Descripción">
+  </div>
+   <div class="pin">
+    <img src="1000059611.jpg" alt="Descripción">
+  </div>
+   <div class="pin">
+    <img src="1000059694.jpg" alt="Descripción">
+  </div>
+   <div class="pin">
+    <img src="10000070711.jpeg" alt="Descripción">
+  </div>
+   <div class="pin">
+    <img src="WhatsApp Image 2026-05-04 at 11.27.17 PM.jpeg" alt="Descripción">
+  </div>
+   <div class="pin">
+    <img src="WhatsApp Image 2026-05-10 at 5.36.08 PM.jpeg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="WhatsApp Image 2026-04-09 at 9.42.17 PM.jpeg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="WhatsApp Image 2026-04-08 at 7.48.26 PM.jpeg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="WhatsApp Image 2026-04-08 at 7.48.28 PM (1).jpeg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000026169.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+  <video autoplay muted loop playsinline class="video-preview">
+    <source src="VID-20260331-WA0025.mp4" type="video/mp4">
+    Tu navegador no soporta videos.
+  </video>
+</div>
+<div class="pin">
+    <img src="1000020088.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000026176.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000031769.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="1000026169.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="1000020080.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="WhatsApp Image 2026-04-08 at 7.48.27 PM.jpeg" alt="Descripción">
+  </div>
+  <div class="pin">
+  <video autoplay muted loop playsinline class="video-preview">
+    <source src="VID-20260309-WA0074.mp4" type="video/mp4">
+    Tu navegador no soporta videos.
+  </video>
+</div>
+<div class="pin">
+    <img src="1000016435.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000056556.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000059945.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000060000.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000055448.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000016443.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="WhatsApp Image 2026-04-08 at 7.48.41 PM.jpeg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000055857.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="WhatsApp Image 2026-04-08 at 7.48.28 PM.jpeg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000055856.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+  <video autoplay muted loop playsinline class="video-preview">
+    <source src="VID-20251031-WA0047.mp4" type="video/mp4">
+    Tu navegador no soporta videos.
+  </video>
+</div>
+<div class="pin">
+    <img src="1000055449.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000031809.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="1000016434.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000032598.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="0.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000026173.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000032597.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="pipisi.jpeg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000026169.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000031769.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+  <video autoplay muted loop playsinline class="video-preview">
+    <source src="VID 00072-20121218-1723.mp4" type="video/mp4">
+    Tu navegador no soporta videos.
+  </video>
+</div>
+<div class="pin">
+    <img src="1000043055.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="1000055446.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000038120.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="IMG20260204145456.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000055429.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="1000029114.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000056554.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000043055.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000034182.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000059996.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="1000055858.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000056918.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="IMG00023-20120510-1909.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000055671.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG-20251218-WA0102.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG-20251218-WA0103(1).jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG00178-20121218-1728.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000055672.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG00050-20120928-0015.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG00030-20120527-1613.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG00052-20120928-0017.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG-20260502-WA0019.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG20251226154216.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="SKY_20260223_125016.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG20251226154344.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000060005.jpg" alt="Descripción">
+  </div>
+
+<div class="pin">
+    <img src="IMG20251226154436.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+  <video autoplay muted loop playsinline class="video-preview">
+    <source src="VID-20251031-WA0048.mp4" type="video/mp4">
+    Tu navegador no soporta videos.
+  </video>
+</div>
+<div class="pin">
+    <img src="maikiutyio.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG20260204145456.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG20260310144119.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="IMG20260406191225.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG20260320165518.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="IMG-20251218-WA0107.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+  <video autoplay muted loop playsinline class="video-preview">
+    <source src="VID20250926205321.mp4" type="video/mp4">
+    Tu navegador no soporta videos.
+  </video>
+</div>
+<div class="pin">
+    <img src="IMG-20260429-WA0029.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+  <video autoplay muted loop playsinline class="video-preview">
+    <source src="VID20260406171347.mp4" type="video/mp4">
+    Tu navegador no soporta videos.
+  </video>
+</div>
+<div class="pin">
+  <video autoplay muted loop playsinline class="video-preview">
+    <source src="VID20251013205944.mp4" type="video/mp4">
+    Tu navegador no soporta videos.
+  </video>
+</div>
+<div class="pin">
+    <img src="IMG-20260429-WA0060.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="juas juas dos.jpeg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG20260305173147.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="IMG-20260429-WA0031.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="IMG-20260429-WA0062.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="IMG-20260429-WA0033.jpeg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG20260310144039.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG20251020144358.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG-20260503-WA0000.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG00028-20120527-1611.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG00201-20130513-1043.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000060030.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG_20260503_233137.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG_20260327_175624_944.webp" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG_20251004_214751.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000060007.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000060009.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000060017.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG_20251004_215253.jpg" alt="Descripción">
+  </div>
+  <div class="pin">
+    <img src="1000060013.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="IMG_20250921_213156.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="ddddddddd.jpeg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="1000060035.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="1000060033.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="1000060031.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="1000016437.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="1000016438.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="1000016439.jpg" alt="Descripción">
+  </div>
+<div class="pin">
+    <img src="1000016444.jpg" alt="Descripción">
+  </div>
+
+
+  </div>
+  <style>
+    .gallery {
+  line-height: 0;
+  column-count: 6; 
+  column-gap: 15px;
+  padding: 20px;
+}
+
+.pin {
+  break-inside: avoid; 
+  margin-bottom: 15px; 
+}
+
+.pin img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px; 
+  transition: transform 0.3s ease;
+}
+
+.pin img:hover {
+  transform: scale(1.02);
+  cursor: zoom-in;
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-contenido {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.cerrar {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.video-preview {
+  width: 100%;
+  border-radius: 16px; 
+  display: block;
+}
+
+
+.pin video:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+  </style>
+  <script>
+const modal = document.getElementById("miModal");
+const imgModal = document.getElementById("imgExpandida");
+const botonCerrar = document.querySelector(".cerrar");
+
+document.querySelectorAll('.pin img').forEach(imagen => {
+  imagen.onclick = function() {
+    modal.style.display = "block"; // Mostramos el modal
+    imgModal.src = this.src; // Pasamos la ruta de la imagen
+  }
+});
+
+botonCerrar.onclick = function() {
+  modal.style.display = "none";
+}
+
+modal.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  </script>
+  </body>   
+  </html>   
